@@ -1,0 +1,20 @@
+@use "variables" as v;
+@use "reset";
+
+
+/******HOMEPAGE******/ 
+.matelas{
+    .matela{
+display: flex;
+flex-direction: row;
+img{
+    width: 30rem;
+    margin: 2rem;
+    padding: 2rem;
+}
+    }
+    .detailMatelas{
+        display: flex;
+        flex-direction: column;
+    }
+}

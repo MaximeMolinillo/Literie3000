@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+img {
+  width: 100%;
+}
+
+/******HOMEPAGE******/
+.matelas .matela {
+  display: flex;
+  flex-direction: row;
+}
+.matelas .matela img {
+  width: 30rem;
+  margin: 2rem;
+  padding: 2rem;
+}
+.matelas .detailMatelas {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=main.css.map */
