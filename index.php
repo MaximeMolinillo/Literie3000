@@ -15,7 +15,10 @@ include("templates/header.php");
 ?>
 <div class="ajout">
     <a href="add_product.php">
-      <h1> Ajouter un produit</h1> 
+        <h1> Ajouter un produit</h1>
+    </a>
+    <a href="delete.php">
+        <h1>Supprimer un produit</h1>
     </a>
 </div>
 <div class="matelas">
@@ -29,7 +32,9 @@ include("templates/header.php");
                 <h3>Produit :<?= $item["nametaille"] ?></h3>
                 <h4>Prix d'origine :<?= $item["originprice"] ?>€</h4>
                 <h4>Prix soldé :<?= $item["actualprice"] ?>€</h4>
+                <h5>Numéro d'identifiant :<?= $item["id"] ?></h5>
             </div>
+
         </div>
 
     <?php
