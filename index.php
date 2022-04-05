@@ -31,11 +31,12 @@ include("templates/header.php");
         <div class="matela">
             <img src="<?= $item["picture"] ?>" alt="">
             <div class="detailMatelas">
+                <h1>Détails du Matelas</h1>
                 <h2>Marque : <?= $item["marque"] ?> </h2>
-                <h3>Produit :<?= $item["nametaille"] ?></h3>
-                <h4>Prix d'origine :<?= $item["originprice"] ?>€</h4>
-                <h4>Prix soldé :<?= $item["actualprice"] ?>€</h4>
-                <h5>Numéro d'identifiant :<?= $item["id"] ?></h5>
+                <h2>Produit : <?= $item["nametaille"] ?></h2>
+                <h2 class="sold">Prix : <?= $item["originprice"] ?>€</h2>
+                <h2 class="price">Prix soldé : <?= $item["actualprice"] ?>€</h2>
+                <h2>Numéro d'identifiant : <?= $item["id"] ?></2>
             </div>
 
         </div>

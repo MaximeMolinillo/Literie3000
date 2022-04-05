@@ -59,7 +59,7 @@ include("templates/header.php");
 
 
 
-<h1>Ajouter un produits</h1>
+<h1 class="titre1">Ajouter un produits</h1>
 
 
 <form action="" method="post">

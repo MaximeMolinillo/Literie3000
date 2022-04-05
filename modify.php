@@ -58,10 +58,12 @@ if (!empty($_POST)) {
 include("templates/header.php");
 ?>
 
-<h1>Modifier un produit</h1>
 
+<h1 class="titre1">Modifier un produit</h1>
 <form action="" method="post">
-    <div class="form-group">
+
+    
+    <div class=" id">
         <label for="inputModify">Veuillez entrer le numéro d'identification du produits à modifier :</label>
         <input type="text" name="modify" id="inputModify" value="<?= isset($modify) ? $modify : "" ?>">
     </div>
@@ -128,7 +130,8 @@ include("templates/header.php");
     </div>
 
     </div>
-    <input type="submit" value="Modifier">
+    <input type="submit" value="Modifier" class="btn">
+   
 </form>
 
 

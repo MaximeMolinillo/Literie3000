@@ -1,6 +1,7 @@
 </div>
-    
+<!-- <img  class="imgFooter" src="./img/1.png" alt=""> -->
 <footer>
+    
     <h3>Suite du catalogue en page 2…</h3>
     <p>
 Vous y découvrirez toutes nos dimensions :

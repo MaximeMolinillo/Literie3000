@@ -26,7 +26,7 @@ if (!empty($_POST)) {
 include("templates/header.php");
 ?>
 
-<h1>Supprimer un produit</h1>
+<h1 class="titre1">Supprimer un produit</h1>
 
 <form action="" method="post">
     <div class="form-group">
@@ -34,7 +34,7 @@ include("templates/header.php");
         <input type="text" name="delete" id="inputdelete" value="<?= isset($delete) ? $delete : "" ?>">
 
     </div>
-    <input type="submit" value="Supprimer">
+    <input type="submit" value="Supprimer" class="btn">
 </form>
 
 
