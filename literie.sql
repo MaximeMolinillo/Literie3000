@@ -24,7 +24,7 @@ VALUES
 
 
 use literie3000;
-delete from matelas where id = 4;
+delete from matelas where id = :delete;
 
 
 

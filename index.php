@@ -20,6 +20,9 @@ include("templates/header.php");
     <a href="delete.php">
         <h1>Supprimer un produit</h1>
     </a>
+    <a href="modify.php">
+        <h1>Modifier un produit</h1>
+    </a>
 </div>
 <div class="matelas">
     <?php

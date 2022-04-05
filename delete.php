@@ -30,9 +30,14 @@ include("templates/header.php");
 
 <form action="" method="post">
     <div class="form-group">
-        <label for="inputdelete">Veillez entres le numéro d'identification du produits à supprimer :</label>
+        <label for="inputdelete">Veillez entrer le numéro d'identification du produits à supprimer :</label>
         <input type="text" name="delete" id="inputdelete" value="<?= isset($delete) ? $delete : "" ?>">
 
     </div>
     <input type="submit" value="Supprimer">
 </form>
+
+
+<?php
+include("templates/footer.php");
+?>

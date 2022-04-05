@@ -1,6 +1,6 @@
 <?php
 if (!empty($_POST)) {
-    var_dump($_POST);
+   // var_dump($_POST);
 
     //strip_tags pr sup balise HTML
     //trim pr enlever espace
@@ -119,11 +119,11 @@ include("templates/header.php");
         ?>
 
 
-        <input type="submit" value="Ajouter le produit" class="btn">
+      
     </div>
 
 
-
+    <input type="submit" value="Ajouter le produit" class="btn">
 
 </form>
 <?php
