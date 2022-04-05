@@ -3,11 +3,11 @@
 if (!empty($_POST)) {
 
     $modify = trim(strip_tags($_POST["modify"]));
-      $pictureModify = trim(strip_tags($_POST["pictureModify"]));
-     $marqueModify = trim(strip_tags($_POST["marqueModify"]));
-      $nametailleModify = trim(strip_tags($_POST["nametailleModify"]));
+    $pictureModify = trim(strip_tags($_POST["pictureModify"]));
+    $marqueModify = trim(strip_tags($_POST["marqueModify"]));
+    $nametailleModify = trim(strip_tags($_POST["nametailleModify"]));
     $originpriceModify = trim(strip_tags($_POST["originpriceModify"]));
-     $actualpriceModify = trim(strip_tags($_POST["actualpriceModify"]));
+    $actualpriceModify = trim(strip_tags($_POST["actualpriceModify"]));
 
     $errors = [];
 
@@ -18,9 +18,9 @@ if (!empty($_POST)) {
     if (empty($nametailleModify)) {
         $errors["nametailleModify"] = "Vous devez renseigner le nom et la taille du produit !";
     }
-     if (empty($actualpriceModify)) {
+    if (empty($actualpriceModify)) {
         $errors["actualpriceModify"] = "Vous devez renseigner le prix actuel du produit !";
-     }
+    }
     if (empty($originpriceModify)) {
         $errors["actualpriceModify"] = "Vous devez renseigner le prix actuel du produit !";
     }
@@ -43,9 +43,9 @@ if (!empty($_POST)) {
     }
 
     $query->bindParam(":modify", $modify);
-     $query->bindParam(":pictureModify", $pictureModify);
-     $query->bindParam(":marqueModify", $marqueModify);
-     $query->bindParam(":nametailleModify", $nametailleModify);
+    $query->bindParam(":pictureModify", $pictureModify);
+    $query->bindParam(":marqueModify", $marqueModify);
+    $query->bindParam(":nametailleModify", $nametailleModify);
     $query->bindParam(":originpriceModify", $originpriceModify);
     $query->bindParam(":actualpriceModify", $actualpriceModify);
 
@@ -62,7 +62,7 @@ include("templates/header.php");
 <h1 class="titre1">Modifier un produit</h1>
 <form action="" method="post">
 
-    
+
     <div class=" id">
         <label for="inputModify">Veuillez entrer le numéro d'identification du produits à modifier :</label>
         <input type="text" name="modify" id="inputModify" value="<?= isset($modify) ? $modify : "" ?>">
@@ -131,20 +131,8 @@ include("templates/header.php");
 
     </div>
     <input type="submit" value="Modifier" class="btn">
-   
+
 </form>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <?php

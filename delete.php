@@ -20,9 +20,6 @@ if (!empty($_POST)) {
     }
 }
 
-
-
-
 include("templates/header.php");
 ?>
 

@@ -1,6 +1,6 @@
 <?php
 if (!empty($_POST)) {
-   // var_dump($_POST);
+    // var_dump($_POST);
 
     //strip_tags pr sup balise HTML
     //trim pr enlever espace
@@ -38,19 +38,19 @@ if (!empty($_POST)) {
     (:picture, :marque, :nametaille, :originprice, :actualprice)");
     }
 
-//Association variable/paramétre avec bindParam
-$query->bindParam(":picture", $picture);
-$query->bindParam(":marque", $marque);
-$query->bindParam(":nametaille", $nametaille);
-$query->bindParam(":originprice", $originprice, PDO::PARAM_INT);
-$query->bindParam(":actualprice", $actualprice, PDO::PARAM_INT);
+    //Association variable/paramétre avec bindParam
+    $query->bindParam(":picture", $picture);
+    $query->bindParam(":marque", $marque);
+    $query->bindParam(":nametaille", $nametaille);
+    $query->bindParam(":originprice", $originprice, PDO::PARAM_INT);
+    $query->bindParam(":actualprice", $actualprice, PDO::PARAM_INT);
 
 
 
-//redirection homepage si léxecution de la requéte est correct
-if ($query->execute()) {
-    header("Location: index.php");
-}
+    //redirection homepage si léxecution de la requéte est correct
+    if ($query->execute()) {
+        header("Location: index.php");
+    }
 }
 
 
@@ -119,7 +119,7 @@ include("templates/header.php");
         ?>
 
 
-      
+
     </div>
 
 
